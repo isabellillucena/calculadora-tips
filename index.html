@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="./main.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Tip Calculator</title>
 </head>
 <body>
     <header>
-        <img src="./images/logo.svg" alt="splitter logo">
+        <img src="./images/logo.svg" alt="splitter calculator logo">
     </header>
 
     <main>
@@ -30,7 +30,7 @@
                 <div>
                     <button onclick="receiveTipPercentageValue(5)" id="button-5">5%</button>
                     <button onclick="receiveTipPercentageValue(10)" id="button-10">10%</button>
-                    <button onclick="receiveTipPercentageValue(15)" id="button-15">15%</button>
+                    <button onclick="receiveTipPercentageValue(15)"id="button-15">15%</button>
                     <button onclick="receiveTipPercentageValue(25)" id="button-25">25%</button>
                     <button onclick="receiveTipPercentageValue(50)" id="button-50">50%</button>
                     <input oninput="receiveCustomTipPercentageValue()" type="number" id="custom-tip" placeholder="Custom">
@@ -65,10 +65,9 @@
                     <strong>$0.00</strong>
                 </div>
             </div>
-            
-            <button>Reset</button>
+
+            <button onclick="reset()">Reset</button>
         </section>
     </main>
-
 </body>
 </html>
